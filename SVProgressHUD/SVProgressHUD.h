@@ -103,6 +103,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setErrorImage:(nonnull UIImage*)image;                          // default is the bundled error image provided by Freepik
 + (void)setViewForExtension:(nonnull UIView*)view;                      // default is nil, only used if #define SV_APP_EXTENSIONS is set
 + (void)setGraceTimeInterval:(NSTimeInterval)interval;                  // default is 0 seconds
++ (void)setGraceTimeEnabledForStatusUpdates:(BOOL)graceTimeForStatusUpdates; // default is YES
 + (void)setMinimumDismissTimeInterval:(NSTimeInterval)interval;         // default is 5.0 seconds
 + (void)setMaximumDismissTimeInterval:(NSTimeInterval)interval;         // default is infinite
 + (void)setFadeInAnimationDuration:(NSTimeInterval)duration;            // default is 0.15 seconds
